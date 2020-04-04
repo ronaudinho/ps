@@ -58,6 +58,12 @@ func TestParseFile(t *testing.T) {
 			iserr: false, // simply skipped by regex, may need another handling
 		},
 		{
+			desc:  "non_ordered",
+			in:    fmt.Sprintf("%s/non_ordered.txt", InputTestsDir),
+			out:   fmt.Sprintf("%s/non_ordered.txt", OutputTestsDir),
+			iserr: false,
+		},
+		{
 			desc:  "undefined_item_price",
 			in:    fmt.Sprintf("%s/undefined_item_price.txt", InputTestsDir),
 			out:   fmt.Sprintf("%s/undefined_item_price.txt", OutputTestsDir),
