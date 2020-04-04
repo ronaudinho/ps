@@ -18,7 +18,9 @@ input can be split into these parts:
 
 - while a strict parts order validation can be imposed for faster parsing, this repo validates on the go i.e `tests/in/non-ordered.txt`
 - in general, error will not be thrown if statements that fall under 1 & 2 are successfully validated, default answer will be used instead
-- `Parser` and `Store` are interfaces, to make the repo extendable should one with to implement a new regex parser with different format or business logic (easily replacing parts mentioned above) and save the results to a different storage solution
+- should one needs to implement
+    - a new regex parser with different format or business logic (easily replacing parts mentioned above) -> `Parser`
+    - use different storage solution -> `Store`
 
 # compiling and invoking the program
 
@@ -32,6 +34,8 @@ tested on linux, go 1.14, from root directory of this repo:
   - `./prospace <path_to_file>` e.g using the current structure it would be `./prospace ../tests/in/default.txt`
 3. using docker
   - why would you want to use docker for this
+
+result will be printed to terminal, to save, simply add `> <path_to_out_file>` after above command (i dont use windows, so have not tested it there) or modify `cmd/main.go`
 
 # you probably do not really care but
 
