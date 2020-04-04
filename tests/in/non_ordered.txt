@@ -1,0 +1,6 @@
+glob is I
+glob glob Silver is 34 Credits
+prok is V
+how many Credits is glob prok Silver ?
+pish is X
+how many Credits is glob pish Silver ?
